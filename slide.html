@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style style="text/css">
+        html, body {
+  background: #102131;
+  color: white;
+}
+
+.container {
+  padding: 30px;
+}
+
+.test-case-wrap {
+  margin-bottom: 60px;
+}
+
+.slick-slider {
+  background: #3a8999;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+}
+.slick-slider .slick-dots button:before,
+.slick-slider .slick-dots .slick-active button:before {
+  color: rgba(255, 255, 255, 0.85);
+}
+.slick-slider .slick-slide {
+  background: #3a8999;
+  padding: 40px 0;
+}
+.slick-slider .slick-slide:nth-child(odd) {
+  background: #e84a69;
+}
+
+.slick-track {
+  display: flex;
+}
+.slick-track .slick-slide {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+          <div>test</div>
+          <div>test2</div>
+          <div>test3</div>
+        </div>
+      </div>
+<script>
+    $(".slider").slick({
+    // autoplay: true,
+    dots: true,
+	slidesToShow: 2,
+	slidesToScroll: 2
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="_assets/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="_assets/slick/slick-theme.css"/>
+  <style type="text/css">
+    .single-item .c1{
+      background-color:red;
+    }
+    .single-item .c2{
+      background-color:green;
+    }
+    .single-item .c3{
+      background-color:blue;
+    }
+    .single-item {
+      max-width: 300px;
+      height: 300px;
+    }
+    .slick-dots > li > button{
+      height: 20px;
+      width:20px;
+      border-radius: 50%;
+      background-color: slateblue;
+    }
+    .slick-dots > li > button::before{
+      /* content:""; */
+    }
+  </style>
+  </head>
+  <body>
+
+  <div class="single-item">
+    <div class="c1">your 1</div>
+    <div class="c2">your 2</div>
+    <div class="c3">your 3<div>
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="_assets/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.single-item').slick({
+          arrows : true,
+          prevArrow : "<button>Sebelum</button>",
+          nextArrow : "<button>Sesudah</button>"
+          // dots      :true
+          // appendDots: "<button class=''></button>"
+        });
+        // $(".slick-active").css({
+        //   "padding" : "5px", 
+        //   "border-radius" : "",
+        //   "background-color" : "white"
+        //   });
+    });
+  </script>
+
+  </body>
+</html>
